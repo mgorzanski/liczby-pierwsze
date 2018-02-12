@@ -9,13 +9,29 @@
 </head>
 <body>
     <header class="header">
-
+        <div class="header__title">
+            <h1>Liczby Pierwsze</h1>
+        </div>
+        
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#">Początek</a></li>
+                <li><a href="#">Algorytmy naiwne</a></li>
+                <li><a href="#">Chiński Test Pierwszości</a></li>
+                <li><a href="#">Małe Twierdzenie Fermata</a></li>
+                <li><a href="#">Test Millera-Rabina</a></li>
+                <li><a href="#">Zastosowanie</a></li>
+                <li><a href="#">Porównanie</a></li>
+                <li><a href="#">O stronie</a></li>
+            </ul>
+        </ul>
     </header>
     <main class="main">
         {{ content }}
     </main>
     <footer class="footer">
-
+        <script src="{{ page.path }}/assets/js/math.min.js"></script>
+        <script src="{{ page.path }}/assets/js/algorithms.js"></script>
     </footer>
 </body>
 </html>
