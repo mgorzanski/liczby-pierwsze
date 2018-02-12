@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 
 .header {
     display:flex;
@@ -68,10 +70,12 @@
 
 .content {
     align-self: flex-start;
+    width:calc(100vw - 369.5px);
 }
 
 .table-of-contents {
     align-self: flex-end;
+    flex-basis: 369.5px;
 }
 
 .table-of-contents__wrapper {
@@ -118,4 +122,25 @@
 
 .table-of-contents__active {
     background-color: #d6d1a4;
+}
+
+.chapter {
+    margin:35px;
+    background-color: #f0f0f0;
+    padding:18px;
+}
+
+.chapter > .chapter {
+    margin:14px;
+}
+
+.chapter-title {
+    font-family: 'Fjalla One', sans-serif;
+    font-size:1.75em;
+    margin:0;
+}
+
+.chapter-content {
+    font-family: 'Alegreya', serif;
+    font-size:1.1em;
 }
