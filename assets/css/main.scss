@@ -13,7 +13,7 @@
     background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-bottom:2px solid #E0E0E0;
-    height: 60px;
+    height: 70px;
     justify-content: space-between;
 }
 
@@ -26,7 +26,7 @@
     text-transform: uppercase;
     font-size:2.2em;
     letter-spacing: 2px;
-    line-height: 65px;
+    line-height: 70px;
     margin: 0 0 0 10px;
 }
 
@@ -38,16 +38,24 @@
     list-style:none;
     margin:0;
     padding:0;
+    overflow: hidden;
 }
 
 .header__menu li {
     float:left;
-    line-height: 65px;
-    padding:0 11px 0 11px;
+    line-height: 70px;
 }
 
 .header__menu li a {
+    display:block;
     font-family: 'Roboto Slab', serif;
     color:#000;
     text-decoration: none;
+    font-size:1.05em;
+    padding:0 11px 0 11px;
+    transition: .2s background-color;
+}
+
+.header__menu li a:hover {
+    background: #1FA2FF;
 }
