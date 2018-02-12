@@ -6,6 +6,7 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
 
 .header {
     display:flex;
@@ -58,4 +59,63 @@
 
 .header__menu li a:hover {
     background: #1FA2FF;
+}
+
+.main {
+    display:flex;
+    justify-content: space-between;
+}
+
+.content {
+    align-self: flex-start;
+}
+
+.table-of-contents {
+    align-self: flex-end;
+}
+
+.table-of-contents__wrapper {
+    margin:35px;
+    background-color:#FFF9C4;
+    padding:20px 0 20px 0;
+}
+
+.table-of-contents__menu {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.table-of-contents__menu li a {
+    display:block;
+    text-decoration: none;
+    color:#000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size:1.2em;
+    letter-spacing: 2px;
+    line-height: 29px;
+    padding:3px 28px 3px 28px;
+}
+
+.table-of-contents__menu li a:hover {
+    background-color: #d6d1a4;
+}
+
+.table-of-contents__submenu {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.table-of-contents__submenu li {
+    display:block;
+    padding:0 0 0 25px;
+}
+
+.table-of-contents__submenu li:hover {
+    background-color: #d6d1a4;
+}
+
+.table-of-contents__active {
+    background-color: #d6d1a4;
 }
