@@ -1,6 +1,7 @@
 {
   "name": "liczby-pierwsze",
   "main": "webpack.config.js",
+  "version": "0.0.1",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch --config webpack.dev.js"
