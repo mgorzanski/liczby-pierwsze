@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);@import url(https://fonts.googleapis.com/css?family=Anton);@import url(https://fonts.googleapis.com/css?family=Barlow+Condensed);@import url(https://fonts.googleapis.com/css?family=Fjalla+One);@import url(https://fonts.googleapis.com/css?family=Alegreya);/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);@import url(https://fonts.googleapis.com/css?family=Anton);@import url(https://fonts.googleapis.com/css?family=Barlow+Condensed);@import url(https://fonts.googleapis.com/css?family=Francois+One);@import url(https://fonts.googleapis.com/css?family=Alegreya);/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -457,13 +457,14 @@ template {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-bottom: 2px solid #E0E0E0;
   height: 70px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
 .header__title {
-  -ms-flex-item-align: start;
-      align-self: flex-start; }
+  justify-self: start; }
 
 .header__title h1 {
   font-family: 'Anton', sans-serif;
@@ -474,9 +475,9 @@ template {
   margin: 0 0 0 10px; }
 
 .header__nav {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin: 0 10px 0 0; }
+  justify-self: end;
+  margin: 0 10px 0 0;
+  display: block; }
 
 .header__menu {
   list-style: none;
@@ -564,7 +565,7 @@ template {
   margin: 14px; }
 
 .chapter__title {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Francois One', sans-serif;
   font-size: 1.75em;
   margin: 0; }
 
@@ -602,5 +603,44 @@ template {
 .step-by-step-guide__explanation {
   float: left;
   width: 30%; }
+
+.header__hamburger-toggle {
+  display: none; }
+
+@media only screen and (max-width: 1600px) {
+  .header__nav {
+    display: none; }
+  .header__nav--open {
+    display: block; }
+  .header__menu {
+    width: 100vw;
+    position: relative;
+    z-index: 999;
+    background-color: #efefef; }
+  .header__menu li {
+    float: none; }
+  .header__hamburger-toggle {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0 10px 0 0;
+    display: block;
+    justify-self: end;
+    cursor: pointer;
+    width: 35px; }
+  .header__hamburger-toggle-bar1, .header__hamburger-toggle-bar2, .header__hamburger-toggle-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #DFDFDF;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+  .header__hamburger-open .header__hamburger-toggle-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .header__hamburger-open .header__hamburger-toggle-bar2 {
+    opacity: 0; }
+  .header__hamburger-open .header__hamburger-toggle-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); } }
 
 /*# sourceMappingURL=app.css.map*/

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 
 .header {
@@ -12,11 +12,12 @@
     background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-bottom:2px solid #E0E0E0;
     height: 70px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .header__title {
-    align-self:flex-start;
+    justify-self: start;
 }
 
 .header__title h1 {
@@ -29,8 +30,9 @@
 }
 
 .header__nav {
-    align-self: flex-end;
+    justify-self: end;
     margin: 0 10px 0 0;
+    display:block;
 }
 
 .header__menu {
@@ -129,7 +131,7 @@
 }
 
 .chapter__title {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Francois One', sans-serif;
     font-size:1.75em;
     margin:0;
 }
@@ -175,3 +177,9 @@
     float:left;
     width:30%;
 }
+
+.header__hamburger-toggle {
+	display:none;
+}
+
+@import 'mobile';

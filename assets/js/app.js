@@ -72,10 +72,19 @@
 
 var _jquery = __webpack_require__(7);
 
+var _jquery2 = _interopRequireDefault(_jquery);
+
 __webpack_require__(1);
 
-window.$ = _jquery.$;
-window.jQuery = _jquery.jQuery;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var hamburgerToggle = document.querySelector('.header__hamburger-toggle');
+var headerNav = document.querySelector('.header__nav');
+
+hamburgerToggle.addEventListener('click', function () {
+    hamburgerToggle.classList.toggle("header__hamburger-open");
+    headerNav.classList.toggle("header__nav--open");
+});
 
 /***/ }),
 /* 1 */
