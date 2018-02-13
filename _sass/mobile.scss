@@ -17,6 +17,10 @@
     .header__menu li {
         float:none;
     }
+
+    .header__menu li a {
+        padding-left:28px;
+    }
     
     .header__hamburger-toggle {
         align-self: center;

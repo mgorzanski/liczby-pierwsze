@@ -13,7 +13,14 @@ path: "."
                 <p>Każda liczba, która nie jest liczbą pierwszą, jest liczbą złożoną, z wyjątkiem zera i jedynki, ponieważ one nie są uznawane ani za liczby pierwsze, ani za liczby złożone.</p>
             </div>
         </article>
-        <article class="chapter" id="">
+
+        <article class="chapter" id="testy-pierwszosci">
+            <h2 class="chapter__title">Testy pierwszości</h2>
+            <div class="chapter__content">
+                
+            </div>
+        </article>
+        <!-- <article class="chapter" id="">
             <h2 class="chapter__title">Algorytm testu pierwszości Fermata</h2>
             <div class="chapter__content">
                 <div class="step-by-step-guide">
@@ -78,7 +85,73 @@ path: "."
                     </ul>
                 </div>
             </div>
-        </article>
+        </article> -->
+    </article>
+
+    <article class="chapter" id="wzory-na-liczby-pierwsze">
+        <h2 class="chapter__title">Wzory na liczby pierwsze</h2>
+        <div class="chapter__content">
+            <ul class="chapter__list">
+                <li>
+                    <p>Próbowano znaleźć proste wzory arytmetyczne, które dawałyby tylko liczby pierwsze, chociaż niekoniecznie wszystkie liczby pierwsze. Fermat wysunął słynne przypuszczenie, że wszystkie liczby postaci:</p>
+                    <p>$F(n)=2^{2n}+1$</p>
+                    <p>są liczbami pierwszymi. Dla <strong>n = 1, 2, 3 lub 4</strong> rzeczywiście otrzymujemy liczby pierwsze, jednak w 1723 roku odkryto, że dla <strong>n = 5</strong> otrzymana liczba nie jest liczbą pierwszą:</p>
+                    <p>$F(5)=641\cdot6700417$</p>
+                </li>
+                <li>
+                    <p>Podobnie wyrażenie: $F(n)=n^{2}-n+41$ daje liczby pierwsze dla <strong>n = 1, 2, 3...40</strong>. Dla <strong>n = 41</strong> liczba jest już złożona.</p>
+                </li>
+                <li>
+                    <p>Wyrażenie: $F(n)=n^{2}-79n+1601$ również daje liczby pierwsze, jednak tylko do <strong>n = 79</strong>.</p>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="chapter" id="rodzaje-liczb-pierwszych">
+        <h2 class="chapter__title">Rodzaje liczb pierwszych</h2>
+        <div class="chapter__content">
+            <article class="chapter" id="liczby-pierwsze-blizniacze">
+                <h2 class="chapter__title">Liczby pierwsze bliźniacze</h2>
+                <div class="chapter__content">
+                    <p>Liczby bliźniacze to dwie liczby pierwsze różniące się o 2.
+                    <p>Liczby pierwsze <strong>p</strong> i <strong>q</strong> są bliźniacze, jeśli <strong>p = q + 2</strong>. Przykłady: 3 i 5, 5 i 7, 11 i 13, 29 i 31.</p>
+                    <p>Największa znana para liczb pierwszych bliźniaczych (listopad 2007) to $2003663613\cdot2^{195000}\pm1$.</p>
+                </div>
+            </article>
+
+            <article class="chapter" id="liczby-pierwsze-czworacze">
+                <h2 class="chapter__title">Liczby pierwsze czworacze</h2>
+                <div class="chapter__content">
+                    <p><strong>Liczby czworacze</strong> czyli pary liczb bliźniaczych w najbliższym możliwym sąsiedztwie.</p>
+                    <p>Ich postać to: <strong>p, p + 2, p + 6, p + 8</strong>. Przykład: 5, 7, 11, 13 lub 821, 823, 827, 829</p>
+                    <p>Największe znane liczby czworacze to:<br>
+                        $4104082046\cdot4799!+5651,4104082046\cdot4799!+5657$ oraz $4104082046\cdot4799!+5659$
+                    </p>
+                </div>
+            </article>
+
+            <article class="chapter" id="liczby-pierwsze-izolowane">
+                <h2 class="chapter__title">Liczby pierwsze izolowane</h2>
+                <div class="chapter__content">
+                    <p>Liczba pierwsza <strong>p</strong> jest izolowana, jeśli najbliższa jej liczba pierwsza różni się od <strong>p</strong> co najmniej o 4. Przykłady: 23, 89, 157, 173.</p>
+                </div>
+            </article>
+
+            <article class="chapter" id="liczby-lustrzane-pierwsze">
+                <h2 class="chapter__title">Liczby lustrzane pierwsze</h2>
+                <div class="chapter__content">
+                    <p>To pary liczb pierwszych, z których jedna powstaje przez zapisanie cyfr dziesiętnych drugiej w odwrotnej kolejności. Przykłady: 13 i 31, 17 i 71, 37 i 73.</p>
+                </div>
+            </article>
+
+            <article class="chapter" id="liczby-palindromiczne-pierwsze">
+                <h2 class="chapter__title">Liczby palindromiczne pierwsze</h2>
+                <div class="chapter__content">
+                    <p>To liczby pierwsze, które nie zmieniają się, gdy ich cyfry dziesiętne zapiszemy w odwrotnej kolejności. Przykłady: 11, 101, 131, 191.</p>
+                </div>
+            </article>
+        </div>
     </article>
 </section>
 
@@ -88,18 +161,21 @@ path: "."
             <li><a class="table-of-contents__active" href="#">Wprowadzenie</a>
                 <ul class="table-of-contents__submenu">
                     <li><a href="#">Definicja liczb pierwszych</a></li>
-                    <li><a href="#">Testowa treść</a></li>
+                    <li><a href="#">Test na pierwszość</a></li>
+                    <li><a href="#">Podstawowe własności</a></li>
                 </ul>
             </li>
-            <li><a href="#">Testowa treść</a></li>
-            <li><a href="#">Testowa treść</a>
+            <li><a href="#">Wzory na liczby pierwsze</a></li>
+            <li><a href="#">Rodzaje liczb pierwszych</a>
                 <ul class="table-of-contents__submenu">
-                    <li><a href="#">Testowa treść</a></li>
-                    <li><a href="#">Testowa treść</a></li>
-                    <li><a href="#">Testowa treść</a></li>
-                    <li><a href="#">Testowa treść</a></li>
+                    <li><a href="#">Liczby pierwsze bliźniarze</a></li>
+                    <li><a href="#">Liczby pierwsze czworacze</a></li>
+                    <li><a href="#">Liczby pierwsze izolowane</a></li>
+                    <li><a href="#">Liczby lustrzane pierwsze</a></li>
+                    <li><a href="#">Liczby palindromiczne pierwsze</a></li>
                 </ul>
             </li>
+            <li><a href="#">Problemy</a></li>
         </ul>
     </div>
 </nav>
