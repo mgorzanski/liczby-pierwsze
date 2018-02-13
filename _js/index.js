@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import './../_sass/index.scss';
+import './waypoints';
 
 let hamburgerToggle = document.querySelector('.header__hamburger-toggle');
 let headerNav = document.querySelector('.header__nav');
