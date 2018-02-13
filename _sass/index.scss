@@ -67,11 +67,13 @@
 }
 
 .content {
-    flex-basis:1593px;
+    justify-self: start;
+    flex:10;
 }
 
 .table-of-contents {
-    flex-basis: 369.5px;
+    flex: 3;
+    justify-self: end;
 }
 
 .table-of-contents__wrapper {
