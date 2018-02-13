@@ -34,9 +34,9 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-babel (1.1.0)
+      babel-transpiler
     jekyll-feed (0.9.3)
-      jekyll (~> 3.3)
-    jekyll-relative-links (0.5.2)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -84,8 +84,8 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   jekyll (~> 3.7.2)
+  jekyll-babel
   jekyll-feed (~> 0.6)
-  jekyll-relative-links
   minima (~> 2.0)
   sprockets-es6
   tzinfo-data

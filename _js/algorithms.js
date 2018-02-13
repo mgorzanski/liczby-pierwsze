@@ -1,4 +1,6 @@
-function naiveAlgorithmOne (p) {
+---
+---
+function algorithmOne (p) {
     if (p > 1) {
         var g = Math.sqrt(p);
         var i;
@@ -16,7 +18,7 @@ function naiveAlgorithmOne (p) {
     }
 }
 
-function naiveAlgorithmTwo (p) {
+function algorithmTwo (p) {
     var g, i, isPrimitive;
     isPrimitive = true;
     if (p === 2) {
@@ -36,7 +38,7 @@ function naiveAlgorithmTwo (p) {
     console.log(isPrimitive);
 }
 
-function naiveAlgorithmThree (p) {
+function algorithmThree (p) {
     var g, i, k, d;
     g = Math.sqrt(p);
     i = 2;
@@ -62,4 +64,40 @@ function naiveAlgorithmThree (p) {
     }
 
     console.log(isPrimitive);
+}
+
+function multiplyModulo (a, b, n) {
+    var m, w;
+    w = 0;
+    m = 1;
+
+    while (m) {
+        if (b & m) {
+            w = (w + a) % n;
+        }
+        a = (a << 1) % n;
+        m <<= 1;
+    }
+    return w;
+}
+
+function powerModulo (e, n) {
+    var m, p, w;
+
+    p = 2;
+    w = m = 1;
+    while (m) {
+        if (e & m) {
+            w = multiplyModulo(w, p, n);
+        }
+        p = multiplyModulo(p, p, n);
+        m <<= 1;
+    }
+    return w;
+}
+
+function algorithmFour (p) {
+    var isPrime;
+    (powerModulo(p,p) == 2 ? isPrime = true : isPrime = false);
+    console.log(isPrime);
 }
