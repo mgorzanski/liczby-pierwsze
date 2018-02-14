@@ -13,7 +13,7 @@
     // background: #1FA2FF;  /* fallback for old browsers */
     // background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
     // background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: $primary-bg-gradient;
+    background: $primary-bg;
     border-bottom:2px solid #E0E0E0;
     height: 70px;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@
 .header__menu li a {
     display:block;
     font-family: 'Roboto Slab', serif;
-    color:#000;
+    color:#373D3F;
     text-decoration: none;
     font-size:1.05em;
     padding:0 11px 0 11px;
@@ -137,14 +137,19 @@
     padding:18px;
 }
 
-.chapter > .chapter {
-    margin:14px;
+.chapter__content > .chapter {
+    margin:12px;
+}
+
+.chapter__content > .chapter > .chapter__title {
+    font-size:1.3em;
 }
 
 .chapter__title {
     font-family: 'Francois One', sans-serif;
-    font-size:1.75em;
+    font-size:1.85em;
     margin:0;
+    border-bottom:1px dotted #000;
 }
 
 .chapter__content {

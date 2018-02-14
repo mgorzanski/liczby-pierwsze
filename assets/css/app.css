@@ -449,8 +449,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9be15d), to(#00e3ae));
-  background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+  background: #4CAF50;
   border-bottom: 2px solid #E0E0E0;
   height: 70px;
   -ms-flex-wrap: wrap;
@@ -492,7 +491,7 @@ template {
 .header__menu li a {
   display: block;
   font-family: 'Roboto Slab', serif;
-  color: #000;
+  color: #373D3F;
   text-decoration: none;
   font-size: 1.05em;
   padding: 0 11px 0 11px;
@@ -565,13 +564,17 @@ template {
   background-color: #f0f0f0;
   padding: 18px; }
 
-.chapter > .chapter {
-  margin: 14px; }
+.chapter__content > .chapter {
+  margin: 12px; }
+
+.chapter__content > .chapter > .chapter__title {
+  font-size: 1.3em; }
 
 .chapter__title {
   font-family: 'Francois One', sans-serif;
-  font-size: 1.75em;
-  margin: 0; }
+  font-size: 1.85em;
+  margin: 0;
+  border-bottom: 1px dotted #000; }
 
 .chapter__content {
   font-family: 'Alegreya', serif;

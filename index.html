@@ -6,108 +6,110 @@ path: "."
 <section class="content">
     <article class="chapter" id="wprowadzenie">
         <h2 class="chapter__title">Wprowadzenie</h2>
-        <article class="chapter" id="definicja-liczb-pierwszych">
-            <h2 class="chapter__title">Definicja liczb pierwszych</h2>
-            <div class="chapter__content">
-                <p><strong>Liczbą pierwszą</strong> nazywamy liczbę naturalną, która jest większa od 1 oraz, która dzieli się tylko przez dokładnie dwie liczby: jeden i siebie samą.</p>
-                <p>Każda liczba, która nie jest liczbą pierwszą, jest liczbą złożoną, z wyjątkiem zera i jedynki, ponieważ one nie są uznawane ani za liczby pierwsze, ani za liczby złożone.</p>
-            </div>
-        </article>
+        <div class="chapter__content">
+            <article class="chapter" id="definicja-liczb-pierwszych">
+                <h2 class="chapter__title">Definicja liczb pierwszych</h2>
+                <div class="chapter__content">
+                    <p><strong>Liczbą pierwszą</strong> nazywamy liczbę naturalną, która jest większa od 1 oraz, która dzieli się tylko przez dokładnie dwie liczby: jeden i siebie samą.</p>
+                    <p>Każda liczba, która nie jest liczbą pierwszą, jest liczbą złożoną, z wyjątkiem zera i jedynki, ponieważ one nie są uznawane ani za liczby pierwsze, ani za liczby złożone.</p>
+                </div>
+            </article>
 
-        <article class="chapter" id="test-na-pierwszosc">
-            <h2 class="chapter__title">Test na pierwszość</h2>
-            <div class="chapter__content">
-                <p><strong>Test na pierwszość</strong> liczby, to algorytm, który sprawdza, czy liczba jest pierwsza, czy złożona.</p>
-                <p>Najprostszym sposobem na sprawdzenie, czy liczba jest liczbą pierwszą jest sprawdzenie czy dzieli się ona kolejno przez 2, 3, aż do n-1. Jeśli przez żadną z nich się nie dzieli, oznacza to, że jest pierwsza.</p>
-                <p>Nie trzeba jednak testować wszystkich liczb do n-1, wystarczy sprawdzić podzielność n przez liczby mniejsze lub równe $\surd n$.</p>
-                <p>Dostępne są także <b>testy probabilistyczne</b>, w których wykorzystuje się losowo wygenerowano liczby z przedziału. Niektóre z tych wartości mogą dać błędny wynik testu, jednak przy wybraniu wystarczającej ich ilości jest to bardzo mało prawdopodobne.</p>
-                <p>W kolejnych rozdziałach zostaną zaprezentowane:
+            <article class="chapter" id="test-na-pierwszosc">
+                <h2 class="chapter__title">Test na pierwszość</h2>
+                <div class="chapter__content">
+                    <p><strong>Test na pierwszość</strong> liczby, to algorytm, który sprawdza, czy liczba jest pierwsza, czy złożona.</p>
+                    <p>Najprostszym sposobem na sprawdzenie, czy liczba jest liczbą pierwszą jest sprawdzenie czy dzieli się ona kolejno przez 2, 3, aż do n-1. Jeśli przez żadną z nich się nie dzieli, oznacza to, że jest pierwsza.</p>
+                    <p>Nie trzeba jednak testować wszystkich liczb do n-1, wystarczy sprawdzić podzielność n przez liczby mniejsze lub równe $\surd n$.</p>
+                    <p>Dostępne są także <b>testy probabilistyczne</b>, w których wykorzystuje się losowo wygenerowano liczby z przedziału. Niektóre z tych wartości mogą dać błędny wynik testu, jednak przy wybraniu wystarczającej ich ilości jest to bardzo mało prawdopodobne.</p>
+                    <p>W kolejnych rozdziałach zostaną zaprezentowane:
+                        <ul class="chapter__list">
+                            <li><a href="#">Podstawowe algorytmy obliczania pierwszości liczby</a></li>
+                            <li><a href="#">Chiński Test Pierwszości</a></li>
+                            <li><a href="#">Małe Twierdzenie Fermata</a></li>
+                            <li><a href="#">Test Millera-Rabina</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </article>
+
+            <article class="chapter" id="podstawowe-wlasnosci">
+                <h2 class="chapter__title">Podstawowe własności</h2>
+                <div class="chapter__content">
                     <ul class="chapter__list">
-                        <li><a href="#">Podstawowe algorytmy obliczania pierwszości liczby</a></li>
-                        <li><a href="#">Chiński Test Pierwszości</a></li>
-                        <li><a href="#">Małe Twierdzenie Fermata</a></li>
-                        <li><a href="#">Test Millera-Rabina</a></li>
-                    </ul>
-                </p>
-            </div>
-        </article>
-
-        <article class="chapter" id="podstawowe-wlasnosci">
-            <h2 class="chapter__title">Podstawowe własności</h2>
-            <div class="chapter__content">
-                <ul class="chapter__list">
-                    <li>Najmniejszy różny od jedynki dzielnik naturalny liczby naturalnej, większej od jedności, jest liczbą pierwszą.</li>
-                    <li>Żaden <span class="tooltip" title="Zbiór o skończonej liczbie elementów">skończony zbiór</span> nie zawiera wszystkich liczb pierwszych</li>
-                    <li>Każda liczba naturalna większa od 1 daje się jednoznacznie zapisać w postaci iloczynu skończonego niemalejącego ciągu pewnych liczb pierwszych.</li>
-                </ul>
-            </div>
-        </article>
-        <!-- <article class="chapter" id="">
-            <h2 class="chapter__title">Algorytm testu pierwszości Fermata</h2>
-            <div class="chapter__content">
-                <div class="step-by-step-guide">
-                    <h3 class="step-by-step-guide__name">Lista kroków</h3>
-                    <ul class="step-by-step-guide__list">
-                        <li class="step-by-step-guide__item">
-                            <div class="step-by-step-guide__text">
-                                <p>Sprawdź, czy p jest podzielne przez liczbę pierwszą z przedziału od 2 do 1000. Jeśli tak to idź do K07</p>
-                            </div>
-                            <div class="step-by-step-guide__explanation">
-                                <p>wstępna eliminacja liczb złożonych oraz ewentualnych liczb pseudopierwszych Calmichaela Dla liczb złożonych zwracamy NIE i kończymy</p>
-                            </div>
-                        </li>
-                        <li class="step-by-step-guide__item">
-                            <div class="step-by-step-guide__text">
-                                <p>Dla i = 1,2,...,10 wykonuj K03...K05</p>
-                            </div>
-                            <div class="step-by-step-guide__explanation">
-                                <p>w pętli sprawdzamy warunek Fermata</p>
-                            </div>
-                        </li>
-                        <li class="step-by-step-guide__item">
-                            <div class="step-by-step-guide__text">
-                                <p>a <- Losowa(2,p - 1)</p>
-                            </div>
-                            <div class="step-by-step-guide__explanation">
-                                <p>wybieramy losową podstawę a</p>
-                            </div>
-                        </li>
-                        <li class="step-by-step-guide__item">
-                            <div class="step-by-step-guide__text">
-                                <p>Jeśli NWD(p,a) =|, to idź do K07</p>
-                            </div>
-                            <div class="step-by-step-guide__explanation">
-                                <p>podstawa musi być względnie pierwsza z p</p>
-                            </div>
-                        </li>
-                        <li class="step-by-step-guide__item">
-                            <div class="step-by-step-guide__text">
-                                <p>Jeśli a p-1 mod p =| 1, to idź do K07</p>
-                            </div>
-                            <div class="step-by-step-guide__explanation">
-                                <p>test na liczbę złożoną</p>
-                            </div>
-                        </li>
-                        <li class="step-by-step-guide__item">
-                            <div class="step-by-step-guide__text">
-                                <p>Pisz "TAK" i zakończ</p>
-                            </div>
-                            <div class="step-by-step-guide__explanation">
-                                <p>liczba p przeszła pozytywnie wszystkie testy</p>
-                            </div>
-                        </li>
-                        <li class="step-by-step-guide__item">
-                            <div class="step-by-step-guide__text">
-                                <p>Pisz "NIE" i zakończ</p>
-                            </div>
-                            <div class="step-by-step-guide__explanation">
-                                <p>liczba p nie przeszła testów, jest zatem liczbą złożoną</p>
-                            </div>
-                        </li>
+                        <li>Najmniejszy różny od jedynki dzielnik naturalny liczby naturalnej, większej od jedności, jest liczbą pierwszą.</li>
+                        <li>Żaden <span class="tooltip" title="Zbiór o skończonej liczbie elementów">skończony zbiór</span> nie zawiera wszystkich liczb pierwszych</li>
+                        <li>Każda liczba naturalna większa od 1 daje się jednoznacznie zapisać w postaci iloczynu skończonego niemalejącego ciągu pewnych liczb pierwszych.</li>
                     </ul>
                 </div>
-            </div>
-        </article> -->
+            </article>
+            <!-- <article class="chapter" id="">
+                <h2 class="chapter__title">Algorytm testu pierwszości Fermata</h2>
+                <div class="chapter__content">
+                    <div class="step-by-step-guide">
+                        <h3 class="step-by-step-guide__name">Lista kroków</h3>
+                        <ul class="step-by-step-guide__list">
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Sprawdź, czy p jest podzielne przez liczbę pierwszą z przedziału od 2 do 1000. Jeśli tak to idź do K07</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>wstępna eliminacja liczb złożonych oraz ewentualnych liczb pseudopierwszych Calmichaela Dla liczb złożonych zwracamy NIE i kończymy</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Dla i = 1,2,...,10 wykonuj K03...K05</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>w pętli sprawdzamy warunek Fermata</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>a <- Losowa(2,p - 1)</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>wybieramy losową podstawę a</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Jeśli NWD(p,a) =|, to idź do K07</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>podstawa musi być względnie pierwsza z p</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Jeśli a p-1 mod p =| 1, to idź do K07</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>test na liczbę złożoną</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Pisz "TAK" i zakończ</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>liczba p przeszła pozytywnie wszystkie testy</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Pisz "NIE" i zakończ</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>liczba p nie przeszła testów, jest zatem liczbą złożoną</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article> -->
+        </div>
     </article>
 
     <article class="chapter" id="wzory-na-liczby-pierwsze">
