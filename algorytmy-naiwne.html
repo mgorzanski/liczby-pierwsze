@@ -14,6 +14,51 @@ path: "."
                     <p>Jeśli liczba <strong>p</strong> <span class="tooltip" title="Czyli liczbę pierwszą, która dzieli ją bez reszty">posiada czynnik</span> większy od pierwiastka z <strong>p</strong>, to drugi czynnik musi być mniejszy od pierwiastka, aby ich iloczyn był równy <strong>p</strong>.</p>
                     <p>W innym przypadku iloczyn dwóch liczb większych od $\surd p$ dawałby liczbę większą od <strong>p</strong>.</p>
                     <p>Sprawdzamy więc podzielność <strong>p</strong> przez liczby z przedziału $<2,\left[\surd p\right]>$, aby wykluczyć liczby złożone.</p>
+
+                    <div class="step-by-step-guide">
+                        <h3 class="step-by-step-guide__name">Lista kroków</h3>
+                        <ul class="step-by-step-guide__list">
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Wprowadzamy liczbę <strong>p</strong></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>liczba ta musi być $p\in N$ i $p>1$</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Dla <strong>g</strong> wyznaczamy $g&larr;\surd p$</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>jest to granica sprawdzania podzielności <strong>p</strong></p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>
+                                        <code>
+                                            for <strong>i</strong> &larr; 2 to <strong>g</strong>
+                                            <br>&emsp;if <strong>p</strong> mod <strong>i</strong> = 0
+                                            <br>&emsp;&emsp;then wypisz "Nie"
+                                            <br>&emsp;&emsp;break
+                                        </code>
+                                    </p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>Jeżeli liczba z przedziału $<2,\left[\surd p\right]>$ dzieli <strong>p</strong>, to <strong>p</strong> nie jest pierwsze</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p><code>wypisz "Tak"</code></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>Jeżeli warunek w pętli nigdy nie spełnił się to liczba jest pierwsza</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </article>
         </div>
