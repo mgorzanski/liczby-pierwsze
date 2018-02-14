@@ -52,9 +52,21 @@
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
+
+    .table-of-contents__wrapper {
+        margin:15px !important;
+    }
+
+    .chapter {
+        margin:49px 15px 21px 15px;
+    }
+
+    .chapter__content {
+        padding:2px;
+    }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1500px) {
     .main {
         flex-direction: column;
     }

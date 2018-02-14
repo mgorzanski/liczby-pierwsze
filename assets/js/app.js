@@ -10451,6 +10451,8 @@ __webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//import './algorithms';
+
 var hamburgerToggle = document.querySelector('.header__hamburger-toggle');
 var headerNav = document.querySelector('.header__nav');
 

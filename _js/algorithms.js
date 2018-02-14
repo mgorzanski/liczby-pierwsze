@@ -1,5 +1,4 @@
----
----
+
 function algorithmOne (p) {
     if (p > 1) {
         var g = Math.sqrt(p);
