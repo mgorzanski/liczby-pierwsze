@@ -53,3 +53,21 @@
         transform: rotate(45deg) translate(-8px, -8px);
     }
 }
+
+@media only screen and (max-width: 1600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .content {
+        order:2;
+    }
+
+    .table-of-contents {
+        order:1;
+    }
+
+    .table-of-contents__wrapper {
+        margin:35px 35px 15px 35px;
+    }
+}
