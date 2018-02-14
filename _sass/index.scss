@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 //@import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
-@import url('https://fonts.googleapis.com/css?family=Francois+One');
+//@import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 @import url('https://fonts.googleapis.com/css?family=Palanquin+Dark');
 @import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Teko:700');
 
 .header {
     display:flex;
@@ -132,29 +133,50 @@
 }
 
 .chapter {
-    margin:35px;
+    margin:49px 35px 21px 35px;
     background-color: #f0f0f0;
-    padding:18px;
 }
 
 .chapter__content > .chapter {
-    margin:12px;
+    margin:0 12px 12px 12px;
+}
+
+.chapter__title {
+    font-family: 'Teko', sans-serif;
+    font-size:1.85em;
+    margin:0;
+    border-bottom:1px dotted #000;
+    //background: $primary-bg;
+    padding:10px;
+    position: relative;
+}
+
+.chapter__title::before {
+    content: "";
+    display: block;
+    width: calc(100% + 14px);
+    height: 69px;
+    top:-14px;
+    left:-14px;
+    position: absolute;
+    z-index:-1;
+    float:left;
+    background: $primary-bg;
 }
 
 .chapter__content > .chapter > .chapter__title {
     font-size:1.3em;
+    background: inherit;
 }
 
-.chapter__title {
-    font-family: 'Francois One', sans-serif;
-    font-size:1.85em;
-    margin:0;
-    border-bottom:1px dotted #000;
+.chapter__content > .chapter > .chapter__title::before {
+    display:none;
 }
 
 .chapter__content {
     font-family: 'Alegreya', serif;
     font-size:1.18em;
+    padding:16px;
 }
 
 .step-by-step-guide {
@@ -204,10 +226,12 @@
 
 .chapter__list li {
     font-family: 'Arimo', sans-serif;
+    font-size:1em;
+    line-height: 1.6em;
 }
 
 .chapter__list li a {
-    color:#000;
+    color:#373D3F;
 }
 
 .tooltip {
