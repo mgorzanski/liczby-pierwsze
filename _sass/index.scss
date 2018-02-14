@@ -71,6 +71,10 @@
     background: $header-link-hover-color;
 }
 
+.header__menu li.active a {
+    background-color: $header-link-hover-color;
+}
+
 .main {
     display:flex;
     justify-content: space-between;

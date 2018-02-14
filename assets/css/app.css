@@ -499,7 +499,10 @@ template {
   transition: .2s background-color; }
 
 .header__menu li a:hover {
-  background: #9be15d; }
+  background: #81C784; }
+
+.header__menu li.active a {
+  background-color: #81C784; }
 
 .main {
   display: -webkit-box;

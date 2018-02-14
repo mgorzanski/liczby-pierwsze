@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liczby Pierwsze</title>
     <link rel="stylesheet" href="{{ page.path }}/assets/css/app.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
     <header class="header">
@@ -20,14 +21,14 @@
         </div>
         <nav class="header__nav">
             <ul class="header__menu">
-                <li><a href="{{ page.path }}/index.html">Początek</a></li>
-                <li><a href="{{ page.path }}/algorytmy-naiwne.html">Algorytmy naiwne</a></li>
-                <li><a href="#">Chiński Test Pierwszości</a></li>
-                <li><a href="#">Małe Twierdzenie Fermata</a></li>
-                <li><a href="#">Test Millera-Rabina</a></li>
-                <li><a href="#">Zastosowanie</a></li>
-                <li><a href="#">Porównanie</a></li>
-                <li><a href="#">O stronie</a></li>
+                <li{% if page.title == "Początek" %} class="active" {% endif %}><a href="{{ page.path }}/index.html">Początek</a></li>
+                <li{% if page.title == "Algorytmy naiwne" %} class="active"{% endif %}><a href="{{ page.path }}/algorytmy-naiwne.html">Algorytmy naiwne</a></li>
+                <li{% if page.name == "chinski-test-pierwszosci" %} class="active"{% endif %}><a href="#">Chiński Test Pierwszości</a></li>
+                <li{% if page.name == "male-twierdzenie-fermata" %} class="active"{% endif %}><a href="#">Małe Twierdzenie Fermata</a></li>
+                <li{% if page.name == "test-millera-rabina" %} class="active"{% endif %}><a href="#">Test Millera-Rabina</a></li>
+                <li{% if page.name == "zastosowanie" %} class="active"{% endif %}><a href="#">Zastosowanie</a></li>
+                <li{% if page.name == "porownanie" %} class="active"{% endif %}><a href="#">Porównanie</a></li>
+                <li{% if page.name == "o-stronie" %} class="active"{% endif %}><a href="#">O stronie</a></li>
             </ul>
         </ul>
     </header>
@@ -42,6 +43,8 @@
             jax: ["input/TeX", "output/HTML-CSS"],
             showMathMenu: false,
             showMathMenuMSIE: false,
+            showProcessingMessages: false,
+            messageStyle: "none",
             tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
             displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
@@ -50,7 +53,6 @@
             "HTML-CSS": { availableFonts: ["TeX"] }
         });
     </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="{{ page.path }}/assets/js/app.js"></script>
 </body>
 </html>
