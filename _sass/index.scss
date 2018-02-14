@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 @import url('https://fonts.googleapis.com/css?family=Palanquin+Dark');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
 
 .header {
     display:flex;
@@ -148,7 +149,7 @@
 
 .chapter__content {
     font-family: 'Alegreya', serif;
-    font-size:1.1em;
+    font-size:1.18em;
 }
 
 .step-by-step-guide {
@@ -193,7 +194,15 @@
 }
 
 .chapter__list {
-    list-style: square;
+    list-style: disc;
+}
+
+.chapter__list li {
+    font-family: 'Arimo', sans-serif;
+}
+
+.chapter__list li a {
+    color:#000;
 }
 
 .tooltip {
