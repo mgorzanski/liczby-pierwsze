@@ -1,15 +1,18 @@
 @import '~normalize.css/normalize.css';
+@import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-@import url('https://fonts.googleapis.com/css?family=Anton');
+//@import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark');
 
 .header {
     display:flex;
-    background: #1FA2FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: #1FA2FF;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: $primary-bg-gradient;
     border-bottom:2px solid #E0E0E0;
     height: 70px;
     flex-wrap: wrap;
@@ -21,12 +24,17 @@
 }
 
 .header__title h1 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Palanquin Dark', sans-serif;
     text-transform: uppercase;
     font-size:2.2em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 70px;
     margin: 0 0 0 10px;
+}
+
+.header__title h1 a {
+    text-decoration: none;
+    color:#000;
 }
 
 .header__nav {
@@ -58,7 +66,7 @@
 }
 
 .header__menu li a:hover {
-    background: #1FA2FF;
+    background: $header-link-hover-color;
 }
 
 .main {
