@@ -60,11 +60,38 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(1);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+__webpack_require__(2);
+
+__webpack_require__(3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//import './algorithms';
+
+var hamburgerToggle = document.querySelector('.header__hamburger-toggle');
+var headerNav = document.querySelector('.header__nav');
+
+hamburgerToggle.addEventListener('click', function () {
+    hamburgerToggle.classList.toggle("header__hamburger-open");
+    headerNav.classList.toggle("header__nav--open");
+});
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10435,53 +10462,19 @@ return jQuery;
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-__webpack_require__(2);
-
-__webpack_require__(10);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//import './algorithms';
-
-var hamburgerToggle = document.querySelector('.header__hamburger-toggle');
-var headerNav = document.querySelector('.header__nav');
-
-hamburgerToggle.addEventListener('click', function () {
-    hamburgerToggle.classList.toggle("header__hamburger-open");
-    headerNav.classList.toggle("header__nav--open");
-});
-
-/***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var tippy = __webpack_require__(11);
+var tippy = __webpack_require__(4);
 
 tippy('.tooltip', {
     arrow: true,
@@ -10489,7 +10482,7 @@ tippy('.tooltip', {
 });
 
 /***/ }),
-/* 11 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
@@ -14665,10 +14658,10 @@ return tippy;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 12 */
+/* 5 */
 /***/ (function(module, exports) {
 
 var g;
