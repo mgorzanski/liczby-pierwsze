@@ -602,8 +602,7 @@ template {
   padding: 16px; }
 
 .step-by-step-guide {
-  overflow: hidden;
-  border-radius: 50px; }
+  overflow: hidden; }
 
 .step-by-step-guide__name {
   margin: 0;
@@ -618,14 +617,19 @@ template {
 
 .step-by-step-guide__item {
   border-bottom: 3px solid #4CAF50;
-  overflow: hidden; }
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .step-by-step-guide__item:last-child {
   border-bottom: 0; }
 
 .step-by-step-guide__text {
   float: left;
-  width: calc(70% - 3px); }
+  width: calc(70% - 3px);
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 .step-by-step-guide__explanation {
   float: left;
@@ -633,7 +637,7 @@ template {
   border-left: 3px solid #4CAF50; }
 
 .step-by-step-guide__text p, .step-by-step-guide__explanation p {
-  padding: 10px; }
+  padding: 3px 15px 3px 15px; }
 
 .header__hamburger-toggle {
   display: none; }

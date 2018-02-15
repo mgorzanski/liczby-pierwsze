@@ -62,192 +62,192 @@ title: "Algorytmy naiwne"
                     </div>
                 </div>
             </article>
-        </div>
-    </article>
 
-    <article class="chapter" id="rozwiazanie-2">
-        <h2 class="chapter__title">Rozwiązanie 2</h2>
-        <div class="chapter__content">
-            <p>Ponieważ wszystkie liczby pierwsze z wyjątkiem 2 są liczbami nieparzystymi, możemy zmniejszyć dwukrotnie liczbę potrzebnych dzieleń w poprzednim algorytmie, jeśli liczbę <strong>p</strong> będziemy dzielić przez kolejne liczby nieparzyste z przedziału $<2,\left[\surd p\right]>$. Najpierw trzeba jeszcze wykonać test podzielności przez 2.</p>
-            <div class="step-by-step-guide">
-                <h3 class="step-by-step-guide__name">Lista kroków</h3>
-                <ul class="step-by-step-guide__list">
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Wprowadzamy liczbę <strong>p</strong></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>liczba ta musi być $p\in N$ i $p>1$</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Dla <strong>t</strong> wyznaczamy <strong>t</strong> &larr; TRUE</p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>wyznacza czy liczba jest liczbą pierwszą czy nie;<br>domyślnie wskazujemy PRAWDĘ</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p><code>
-                                if <strong>p</strong> = 2<br>
-                                &emsp;then <strong>t</strong> &larr; TRUE
-                            </code></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>liczba 2 jest liczbą pierwszą i nie jest liczbą nieparzystą</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p><code>
-                                if <strong>p</strong> mod 2 = 0<br>
-                                &emsp;then <strong>t</strong> &larr; FALSE
-                            </code></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>sprawdzamy podzielność przez 2</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Dla <strong>g</strong> wyznaczamy $g&larr;\surd p$</p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>jest to granica sprawdzania podzielności <strong>p</strong></p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p><code>
-                                for <strong>i</strong> &larr; 3 </code>$\leq$<code> <strong>g</strong> do<br>
-                                &emsp;if <strong>p</strong> mod <strong>i</strong> = 0<br>
-                                &emsp;&emsp;then <strong>t</strong> &larr; FALSE<br>
-                                &emsp;&emsp;break<br>
-                                &emsp;<strong>i</strong> &larr; i + 3
-                            </code></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>sprawdzamy podzielność liczby przez podzielniki nieparzyste</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Wypisz wartość <strong>t</strong></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>jeżeli zmienna ma wartość PRAWDA, to <strong>p</strong> jest liczbą pierwszą</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </article>
+            <article class="chapter" id="rozwiazanie-2">
+                <h2 class="chapter__title">Rozwiązanie 2</h2>
+                <div class="chapter__content">
+                    <p>Ponieważ wszystkie liczby pierwsze z wyjątkiem 2 są liczbami nieparzystymi, możemy zmniejszyć dwukrotnie liczbę potrzebnych dzieleń w poprzednim algorytmie, jeśli liczbę <strong>p</strong> będziemy dzielić przez kolejne liczby nieparzyste z przedziału $<2,\left[\surd p\right]>$. Najpierw trzeba jeszcze wykonać test podzielności przez 2.</p>
+                    <div class="step-by-step-guide">
+                        <h3 class="step-by-step-guide__name">Lista kroków</h3>
+                        <ul class="step-by-step-guide__list">
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Wprowadzamy liczbę <strong>p</strong></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>liczba ta musi być $p\in N$ i $p>1$</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Dla <strong>t</strong> wyznaczamy <strong>t</strong> &larr; TRUE</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>wyznacza czy liczba jest liczbą pierwszą czy nie;<br>domyślnie wskazujemy PRAWDĘ</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p><code>
+                                        if <strong>p</strong> = 2<br>
+                                        &emsp;then <strong>t</strong> &larr; TRUE
+                                    </code></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>liczba 2 jest liczbą pierwszą i nie jest liczbą nieparzystą</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p><code>
+                                        if <strong>p</strong> mod 2 = 0<br>
+                                        &emsp;then <strong>t</strong> &larr; FALSE
+                                    </code></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>sprawdzamy podzielność przez 2</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Dla <strong>g</strong> wyznaczamy $g&larr;\surd p$</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>jest to granica sprawdzania podzielności <strong>p</strong></p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p><code>
+                                        for <strong>i</strong> &larr; 3 </code>$\leq$<code> <strong>g</strong> do<br>
+                                        &emsp;if <strong>p</strong> mod <strong>i</strong> = 0<br>
+                                        &emsp;&emsp;then <strong>t</strong> &larr; FALSE<br>
+                                        &emsp;&emsp;break<br>
+                                        &emsp;<strong>i</strong> &larr; i + 3
+                                    </code></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>sprawdzamy podzielność liczby przez podzielniki nieparzyste</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Wypisz wartość <strong>t</strong></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>jeżeli zmienna ma wartość PRAWDA, to <strong>p</strong> jest liczbą pierwszą</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
 
-    <article class="chapter" id="rozwiazanie-3">
-        <h2 class="chapter__title">Rozwiązanie 3</h2>
-        <div class="chapter__content">
-            <p>Liczbę niezbędnych dzieleń można dalej ograniczyć, jeśli liczbę p będziemy dzielić przez dzielniki:</p>
-            <p><strong>2, 3 oraz $6k\pm1$, dla k = 1,2,...,$6k\pm1\in<2,\left[\surd p\right]>$</strong></p>
-            <p>Dwa pierwsze dzielniki są początkowymi liczbami pierwszymi. Gdy wyeliminujemy czynniki 2 i 3, pozostałe liczby pierwsze muszą przybrać postać 6k ± 1. Wyjaśnienie jest bardzo proste:</p>
-            <p><strong>
-                6k = 2 × 3 × k – liczby podzielne przez 2 i 3 nie są pierwsze<br>
-                6k ± 2 = 2 × (3k ± 1) – liczby podzielne przez 2 nie są pierwsze<br>
-                6k ± 3 = 3 × (2k ± 1) – liczby podzielne przez 3 nie są pierwsze<br>
-                6k ± 4 = 2 × (3k ± 2) – liczby podzielne przez 2 nie są pierwsze<br>
-            </strong></p>
-            <p>Pozostają liczby postaci:</p>
-            <p><strong>
-                6k ± 1, które mogą być pierwsze (ale nie muszą!). Jednakże liczb tych jest 1/3 w stosunku do pierwotnego algorytmu, co zaowocuje zmniejszeniem liczby wykonywanych dzieleń.
-            </strong></p>
+            <article class="chapter" id="rozwiazanie-3">
+                <h2 class="chapter__title">Rozwiązanie 3</h2>
+                <div class="chapter__content">
+                    <p>Liczbę niezbędnych dzieleń można dalej ograniczyć, jeśli liczbę p będziemy dzielić przez dzielniki:</p>
+                    <p><strong>2, 3 oraz $6k\pm1$, dla k = 1,2,...,$6k\pm1\in<2,\left[\surd p\right]>$</strong></p>
+                    <p>Dwa pierwsze dzielniki są początkowymi liczbami pierwszymi. Gdy wyeliminujemy czynniki 2 i 3, pozostałe liczby pierwsze muszą przybrać postać 6k ± 1. Wyjaśnienie jest bardzo proste:</p>
+                    <p><strong>
+                        6k = 2 × 3 × k – liczby podzielne przez 2 i 3 nie są pierwsze<br>
+                        6k ± 2 = 2 × (3k ± 1) – liczby podzielne przez 2 nie są pierwsze<br>
+                        6k ± 3 = 3 × (2k ± 1) – liczby podzielne przez 3 nie są pierwsze<br>
+                        6k ± 4 = 2 × (3k ± 2) – liczby podzielne przez 2 nie są pierwsze<br>
+                    </strong></p>
+                    <p>Pozostają liczby postaci:</p>
+                    <p><strong>
+                        6k ± 1, które mogą być pierwsze (ale nie muszą!). Jednakże liczb tych jest 1/3 w stosunku do pierwotnego algorytmu, co zaowocuje zmniejszeniem liczby wykonywanych dzieleń.
+                    </strong></p>
 
-            <div class="step-by-step-guide">
-                <h3 class="step-by-step-guide__name">Lista kroków</h3>
-                <ul class="step-by-step-guide__list">
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Wprowadzamy liczbę <strong>p</strong></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>liczba ta musi być $p\in N$ i $p>1$</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Dla <strong>t</strong> wyznaczamy <strong>t</strong> &larr; TRUE</p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>wyznacza czy liczba jest liczbą pierwszą czy nie;<br>domyślnie wskazujemy PRAWDĘ</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Dla <strong>g</strong> wyznaczamy $g&larr;\surd p$</p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>jest to granica sprawdzania podzielności <strong>p</strong></p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Dla <strong>k</strong> &larr; 1 i <strong>d</strong> &larr; FALSE</p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>wyznaczamy zmienne pomocnicze</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p><code>
-                                for <strong>i</strong> &larr; 2 </code>$\leq$<code> do<br>
-                                &emsp;if <strong>p</strong> mod <strong>i</strong> = 0<br>
-                                &emsp;&emsp;<strong>t</strong> &larr; FALSE<br>
-                                &emsp;&emsp;break
-                            </code></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>sprawdzamy podzielność <strong>p</strong> przez <strong>i</strong></p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p><code>
-                                &emsp;if <strong>i</strong> > 2<br>
-                                &emsp;&emsp;<strong>d</strong> &larr; !d<br>
-                                &emsp;&emsp;<strong>i</strong> &larr; (k << 1) + (k << 2)<br>
-                                &emsp;&emsp;if <strong>d</strong> = TRUE<br>
-                                &emsp;&emsp;&emsp;<strong>i</strong> &larr; i - 1<br>
-                                &emsp;&emsp;else<br>
-                                &emsp;&emsp;&emsp;<strong>k</strong> &larr; k + 1<br>
-                                &emsp;&emsp;&emsp;<strong>i</strong> &larr; i + 1
-                            </code></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>podzielniki > 3 generujemy wg wzoru 6k ± 1</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p><code>
-                                &emsp;else
-                                &emsp;&emsp;<strong>i</strong> &larr; i + 1;
-                            </code></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>podzielniki 2 i 3</p>
-                        </div>
-                    </li>
-                    <li class="step-by-step-guide__item">
-                        <div class="step-by-step-guide__text">
-                            <p>Wypisz wartość <strong>t</strong></p>
-                        </div>
-                        <div class="step-by-step-guide__explanation">
-                            <p>jeżeli zmienna ma wartość PRAWDA, to <strong>p</strong> jest liczbą pierwszą</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                    <div class="step-by-step-guide">
+                        <h3 class="step-by-step-guide__name">Lista kroków</h3>
+                        <ul class="step-by-step-guide__list">
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Wprowadzamy liczbę <strong>p</strong></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>liczba ta musi być $p\in N$ i $p>1$</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Dla <strong>t</strong> wyznaczamy <strong>t</strong> &larr; TRUE</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>wyznacza czy liczba jest liczbą pierwszą czy nie;<br>domyślnie wskazujemy PRAWDĘ</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Dla <strong>g</strong> wyznaczamy $g&larr;\surd p$</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>jest to granica sprawdzania podzielności <strong>p</strong></p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Dla <strong>k</strong> &larr; 1 i <strong>d</strong> &larr; FALSE</p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>wyznaczamy zmienne pomocnicze</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p><code>
+                                        for <strong>i</strong> &larr; 2 </code>$\leq$<code> do<br>
+                                        &emsp;if <strong>p</strong> mod <strong>i</strong> = 0<br>
+                                        &emsp;&emsp;<strong>t</strong> &larr; FALSE<br>
+                                        &emsp;&emsp;break
+                                    </code></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>sprawdzamy podzielność <strong>p</strong> przez <strong>i</strong></p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p><code>
+                                        &emsp;if <strong>i</strong> > 2<br>
+                                        &emsp;&emsp;<strong>d</strong> &larr; !d<br>
+                                        &emsp;&emsp;<strong>i</strong> &larr; (k << 1) + (k << 2)<br>
+                                        &emsp;&emsp;if <strong>d</strong> = TRUE<br>
+                                        &emsp;&emsp;&emsp;<strong>i</strong> &larr; i - 1<br>
+                                        &emsp;&emsp;else<br>
+                                        &emsp;&emsp;&emsp;<strong>k</strong> &larr; k + 1<br>
+                                        &emsp;&emsp;&emsp;<strong>i</strong> &larr; i + 1
+                                    </code></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>podzielniki > 3 generujemy wg wzoru 6k ± 1</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p><code>
+                                        &emsp;else<br>
+                                        &emsp;&emsp;<strong>i</strong> &larr; i + 1;
+                                    </code></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>podzielniki 2 i 3</p>
+                                </div>
+                            </li>
+                            <li class="step-by-step-guide__item">
+                                <div class="step-by-step-guide__text">
+                                    <p>Wypisz wartość <strong>t</strong></p>
+                                </div>
+                                <div class="step-by-step-guide__explanation">
+                                    <p>jeżeli zmienna ma wartość PRAWDA, to <strong>p</strong> jest liczbą pierwszą</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
         </div>
     </article>
 </section>

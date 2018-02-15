@@ -185,7 +185,6 @@
 
 .step-by-step-guide {
     overflow: hidden;
-    border-radius:50px;
 }
 
 .step-by-step-guide__name {
@@ -204,6 +203,7 @@
 .step-by-step-guide__item {
     border-bottom:3px solid $primary-bg;
     overflow: hidden;
+    display:flex;
 }
 
 .step-by-step-guide__item:last-child {
@@ -213,6 +213,7 @@
 .step-by-step-guide__text {
     float:left;
     width:calc(70% - 3px);
+    align-self: center;
 }
 
 .step-by-step-guide__explanation {
@@ -222,7 +223,7 @@
 }
 
 .step-by-step-guide__text p, .step-by-step-guide__explanation p {
-    padding:10px;
+    padding:3px 15px 3px 15px;
 }
 
 .header__hamburger-toggle {
